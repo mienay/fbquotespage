@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.member {
+  position: relative;
+  max-width: 300px;
+  padding: 0 5px;
+  transition: .5s all ease;
+}
+
+.photo {
+  width: 100%;
+}
+
+.description {
+  margin: 0 10px;
+  position: absolute;
+  top: -10px;
+  color: #fff;
+  font-family: sans-serif;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(170,109,178, .7);
+  user-select: none;
+  opacity: 0;
+  transition: .5s;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 0;
+  margin-top: 70%;
+}
+
+.member:hover {
+  margin-top: -40px;
+}
+
+.member:hover .description {
+  opacity: 1;
+}
